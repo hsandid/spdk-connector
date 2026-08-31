@@ -1,0 +1,34 @@
+LMCache SPDK Connectors
+======================
+
+Copyright (c) 2026 Cisco and/or its affiliates.
+
+Copyright in this repository is held by Cisco Systems, Inc. and other
+contributors. Unless a file states otherwise, the repository is licensed
+under the Apache License, Version 2.0; see LICENSE.
+
+Project names and trademarks
+----------------------------
+
+LMCache, SPDK, DPDK, QEMU, and pybind11 are used in this repository only to
+identify compatible software. Their names, logos, and trademarks are the
+property of their respective owners. Use of those names does not imply a
+partnership, sponsorship, endorsement, or affiliation.
+
+Dependency boundary
+-------------------
+
+This repository does not include LMCache, SPDK, DPDK, ISA-L, ISA-L Crypto,
+QEMU, libvfio-user, or vfio-user-kvssd source code or binaries. The native
+connectors are built against separately obtained LMCache and SPDK checkouts.
+The QEMU and vfio-user tools mentioned in documentation and functional tests
+are external test prerequisites, not part of either connector package.
+
+Native-extension distributions
+------------------------------
+
+The native extensions compile against pybind11 headers. See
+THIRD_PARTY_NOTICES for pybind11's required attribution. A distributor that
+bundles SPDK or any of its dependencies in a wheel, container, installer, or
+other artifact must also provide the applicable notices and license texts for
+the exact components included in that artifact.

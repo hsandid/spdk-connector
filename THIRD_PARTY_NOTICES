@@ -1,0 +1,69 @@
+Third-Party Notices
+===================
+
+This repository builds connectors against the following separately obtained
+dependencies. Their source code and binaries are not included in this
+repository.
+
+LMCache
+-------
+
+The packages require LMCache v0.5.4 at build and runtime. LMCache is licensed
+under the Apache License, Version 2.0:
+https://github.com/LMCache/LMCache/blob/v0.5.4/LICENSE
+
+Portions of the SPDK bdev connector under bdev/csrc/spdk/ and
+bdev/csrc/storage_geometry.cpp were derived from the following LMCache sources
+at commit a33ce51f055560e094325cd8aae5690b0528575f, and remain under the
+Apache License, Version 2.0:
+
+  - csrc/storage_backends/spdk/spdk_bdev_context.{cpp,h}
+  - csrc/storage_backends/spdk/spdk_buffer_pool.{cpp,h}
+  - csrc/storage_backends/spdk/spdk_config.h
+  - csrc/storage_backends/spdk/spdk_runtime.{cpp,h}
+  - csrc/storage_backends/spdk/page_map.{cpp,h}
+
+SPDK
+----
+
+The native extensions require SPDK v26.05. SPDK's main repository is licensed
+under BSD-3-Clause; its submodules retain their own licenses:
+https://github.com/spdk/spdk/blob/v26.05/LICENSE
+
+The actual link dependency closure is selected by the SPDK build's pkg-config
+metadata. Distributors that bundle SPDK, DPDK, ISA-L, ISA-L Crypto, or another
+component from that closure must include the license text and notices required
+by the version they distribute.
+
+pybind11
+--------
+
+The native extensions compile against pybind11 headers. pybind11 is licensed
+under the following BSD-3-Clause terms:
+
+Copyright (c) 2016 Wenzel Jakob <wenzel.jakob@epfl.ch>, All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

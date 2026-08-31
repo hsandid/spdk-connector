@@ -1,0 +1,18 @@
+{
+  "type": "native_plugin",
+  "module_path": "lmcache_spdk_connector",
+  "class_name": "SpdkNativeConnector",
+  "max_capacity_gb": 400,
+  "adapter_params": {
+    "spdk_json_config": "/etc/lmcache/spdk-bdev.json",
+    "bdev_name": "Nvme0n1",
+    "spdk_reactor_cpus": [1, 2],
+    "connector_worker_cpus": [3, 4, 5, 6],
+    "spdk_io_thread_count": 2,
+    "spdk_buffer_count": 16,
+    "spdk_memory_size_mb": 1024,
+    "spdk_no_huge": true,
+    "spdk_no_pci": false,
+    "spdk_io_segment_bytes": 1048576
+  }
+}

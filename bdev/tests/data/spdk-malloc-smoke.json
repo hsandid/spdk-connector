@@ -1,0 +1,25 @@
+{
+  "subsystems": [
+    {
+      "subsystem": "bdev",
+      "config": [
+        {
+          "method": "bdev_malloc_create",
+          "params": {
+            "name": "SmokeMalloc0",
+            "num_blocks": 16384,
+            "block_size": 4096
+          }
+        },
+        {
+          "method": "bdev_malloc_create",
+          "params": {
+            "name": "SmokeMalloc1",
+            "num_blocks": 16384,
+            "block_size": 4096
+          }
+        }
+      ]
+    }
+  ]
+}

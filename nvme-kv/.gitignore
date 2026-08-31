@@ -1,0 +1,20 @@
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments and package build products
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+*.so
+
+# Functional-test executables and retained serial traces
+tests/functional/spdk_kv_smoke
+tests/functional/lmcache_native_kv_smoke
+*.log

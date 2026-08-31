@@ -1,0 +1,15 @@
+# Python build products and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+*.so
+
+# NVMe-KV functional-test artifacts
+*.log

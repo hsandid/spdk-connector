@@ -1,0 +1,14 @@
+# Python bytecode and test/tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local environments and packaging/build outputs
+.venv/
+venv/
+/build/
+/dist/
+*.egg-info/
+*.so
